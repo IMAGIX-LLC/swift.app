@@ -26,15 +26,15 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
         
         theLabel.text = "Answer is...\(Double(text1.text!)! + Double(Text2.text!)!)"
-    
+        
         
         //theLabel.text = "LIE !!"    //change the label text as a result of the button tap...
         
         tapCount = tapCount + 1 //increment the variable each time the button is tapped...
         
-            if tapCount >= 4 {
-                theLabel.text = "Bumper is Cool!" //change the label after 4 taps...
-            }
+        if tapCount >= 4 {
+            theLabel.text = "Bumper is Cool!" //change the label after 4 taps...
+        }
         
         //give some feedback to the console for testing...
         print("button tapped")
@@ -51,12 +51,12 @@ class ViewController: UIViewController {
         //set the text for "theLabel"
         theLabel.text = "Bumper is Cool"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
