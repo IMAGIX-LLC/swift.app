@@ -25,10 +25,10 @@ class ViewController: UIViewController {
     //action for the button...
     @IBAction func buttonTapped(_ sender: Any) {
         
-        print(text1.text!)
-        print(Text2.text!)
+        theLabel.text = "Answer is...\(Double(text1.text!)! + Double(Text2.text!)!)"
+    
         
-        theLabel.text = "LIE !!"    //change the label text as a result of the button tap...
+        //theLabel.text = "LIE !!"    //change the label text as a result of the button tap...
         
         tapCount = tapCount + 1 //increment the variable each time the button is tapped...
         
