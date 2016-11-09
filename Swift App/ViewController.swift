@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     //link "theLabel"
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
+    
     //Create a variable to track the button taps...
     var tapCount = 0
     
@@ -20,12 +25,15 @@ class ViewController: UIViewController {
     //action for the button...
     @IBAction func buttonTapped(_ sender: Any) {
         
+        print(text1.text!)
+        print(Text2.text!)
+        
         theLabel.text = "LIE !!"    //change the label text as a result of the button tap...
         
         tapCount = tapCount + 1 //increment the variable each time the button is tapped...
         
             if tapCount >= 4 {
-                theLabel.text = "Bumper is Cool Again!" //change the label after 4 taps...
+                theLabel.text = "Bumper is Cool!" //change the label after 4 taps...
             }
         
         //give some feedback to the console for testing...
